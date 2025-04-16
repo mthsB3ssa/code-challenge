@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/van_gogh_parser'
+
+html_file = ARGV[0] || 'files/van-gogh-paintings.html'
+parser = VanGoghParser.new(html_file)
+puts parser.to_json 
